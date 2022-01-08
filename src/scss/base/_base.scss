@@ -1,0 +1,99 @@
+@use '../abstract' as *;
+
+body {
+  // width: $nftmobile;
+  min-width: 37.5rem;
+  background: $nftdarkbluebody;
+}
+
+.container {
+  // min-width: 37.5rem;
+  background-color: $nftdarkbluemain;
+  max-width: 60rem;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.card {
+  max-width: 35rem;
+  background: $nftdarkbluecard;
+  display: flex;
+  flex-direction: column;
+  // margin-top: 2.5rem;
+  margin: 5rem auto;
+  border-radius: 1.5rem;
+  padding: 2.5rem;
+
+  & img {
+    border-radius: 2rem;
+  }
+}
+
+section {
+  margin-top: 2rem;
+}
+
+.head h1 {
+  font-size: 2rem;
+  color: white;
+  padding-bottom: 1.5rem;
+}
+
+p {
+  font-size: 1.8rem;
+  color: $nftsoftblue;
+}
+
+hr {
+  width: 100%;
+  border-top: 1px solid $nftdarkblueline;
+  margin-top: 2rem;
+}
+.details {
+  display: flex;
+  justify-content: space-between;
+  // align-items: center;
+}
+
+.coin,
+.time {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ethereum {
+  color: $nftcyan;
+  margin-left: 5px;
+  font-size: 1.8rem;
+}
+
+.days {
+  color: $nftsoftblue;
+  margin-left: 5px;
+  font-size: 1.8rem;
+}
+
+.user {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+
+  & img {
+    width: 3rem;
+    border: 1px solid white;
+    border-radius: 50%;
+  }
+
+  & p span {
+    color: white;
+  }
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
