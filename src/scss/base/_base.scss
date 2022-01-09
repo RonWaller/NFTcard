@@ -125,6 +125,10 @@ hr {
     border: 1px solid white;
     border-radius: 50%;
   }
+
+  & a {
+    text-decoration: none;
+  }
 }
 
 .creator {
