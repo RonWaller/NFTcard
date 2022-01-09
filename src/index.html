@@ -10,15 +10,17 @@
     <link rel="stylesheet" href="./scss/style.scss" />
     <script type="module" defer src="./js/main.js"></script>
     <title>Frontend Mentor | NFT preview card component</title>
-
-    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   </head>
   <body>
     <div class="container">
       <div class="card">
-        <img src="./images/image-equilibrium.jpg" alt="Equilibrium graphic image" />
+        <div class="wrapper">
+          <img src="./images/image-equilibrium.jpg" alt="Equilibrium graphic image"/>
+          <a href="#" target="_blank"
+          <div class="overlay"></div>
+        </a>
         <section class="head">
-          <h1>Equilibrium #3429</h1>
+          <a href="#"><h1>Equilibrium #3429</h1></a>
           <p>Our Equilibrium collection promotes balance and calm.</p>
         </section>
         <section class="details">
@@ -34,7 +36,8 @@
         <hr />
         <section class="user">
           <img src="./images/image-avatar.png" alt="image of Jules Wyvern" />
-          <p>Creation of <span>Jules Wyvern</span></p>
+          <p>Creation of <a href="#"><span class="creator">Jules Wyvern</span></a>
+          </p>
         </section>
       </div>
 

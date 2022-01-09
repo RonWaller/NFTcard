@@ -19,14 +19,42 @@ body {
   background: $nftdarkbluecard;
   display: flex;
   flex-direction: column;
-  // margin-top: 2.5rem;
   margin: 5rem auto;
   border-radius: 1.5rem;
   padding: 2.5rem;
 
   & img {
     border-radius: 2rem;
+
+    :hover {
+      cursor: pointer;
+      background-color: $nftcyan;
+    }
   }
+}
+
+.wrapper {
+  position: relative;
+  border-radius: 2rem;
+  cursor: pointer;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: 0.5 ease-in-out;
+  background-color: $nftcyan;
+  border-radius: 2rem;
+}
+
+.wrapper:hover .overlay {
+  opacity: 0.5;
 }
 
 section {
@@ -37,6 +65,11 @@ section {
   font-size: 2rem;
   color: white;
   padding-bottom: 1.5rem;
+
+  &:hover {
+    color: $nftcyan;
+    cursor: pointer;
+  }
 }
 
 p {
@@ -52,7 +85,6 @@ hr {
 .details {
   display: flex;
   justify-content: space-between;
-  // align-items: center;
 }
 
 .coin,
@@ -84,9 +116,14 @@ hr {
     border: 1px solid white;
     border-radius: 50%;
   }
+}
 
-  & p span {
-    color: white;
+.creator {
+  color: white;
+
+  &:hover {
+    color: $nftcyan;
+    cursor: pointer;
   }
 }
 
