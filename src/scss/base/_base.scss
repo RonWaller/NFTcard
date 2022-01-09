@@ -49,12 +49,21 @@ body {
   width: 100%;
   opacity: 0;
   transition: 0.5 ease-in-out;
-  background-color: $nftcyan;
+  background-color: $nftcyanhover;
   border-radius: 2rem;
+  z-index: 1;
+
+  & img {
+    position: absolute;
+    color: white;
+    top: 42%;
+    left: 42%;
+    z-index: 999;
+  }
 }
 
 .wrapper:hover .overlay {
-  opacity: 0.5;
+  opacity: 1;
 }
 
 section {
