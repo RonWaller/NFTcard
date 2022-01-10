@@ -2,29 +2,35 @@
 
 body {
   // width: $nftmobile;
-  min-width: 37.5rem;
+  // min-width: 37.5rem;
+  // width: 100%;
   background: $nftdarkbluebody;
+  overflow: hidden;
 }
 
 .container {
-  // min-width: 37.5rem;
   background-color: $nftdarkbluemain;
   max-width: 60rem;
   margin: 4rem auto;
+  min-height: 100vh;
+  display: grid;
+  place-content: center;
+  padding: 2rem;
   overflow: hidden;
 }
 
 .card {
-  max-width: 35rem;
+  // width: 100%;
   background: $nftdarkbluecard;
-  display: flex;
-  flex-direction: column;
-  margin: 5rem auto;
+  // display: flex;
+  // flex-direction: column;
+  // margin: 5rem auto;
+  margin-bottom: 2rem;
   border-radius: 1.5rem;
-  padding: 2.5rem;
+  padding: 5rem;
 
   & img {
-    border-radius: 2rem;
+    border-radius: 1.5rem;
 
     :hover {
       cursor: pointer;
@@ -48,17 +54,15 @@ body {
   height: 100%;
   width: 100%;
   opacity: 0;
-  transition: 0.5 ease-in-out;
+  transition: opacity 0.3s ease-out;
   background-color: $nftcyanhover;
   border-radius: 2rem;
-  z-index: 1;
 
   & img {
     position: absolute;
     color: white;
-    top: 42%;
-    left: 42%;
-    z-index: 999;
+    top: 50%;
+    left: 50%;
   }
 }
 
@@ -66,19 +70,23 @@ body {
   opacity: 1;
 }
 
-section {
-  margin-top: 2rem;
+.title {
+  font-size: 2rem;
+  margin: 1.5rem 0;
+
+  & a {
+    text-decoration: none;
+    color: white;
+
+    &:hover {
+      color: $nftcyan;
+      cursor: pointer;
+    }
+  }
 }
 
-.head h1 {
-  font-size: 2rem;
-  color: white;
-  padding-bottom: 1.5rem;
-
-  &:hover {
-    color: $nftcyan;
-    cursor: pointer;
-  }
+.description {
+  margin: 1.5rem 0;
 }
 
 p {
@@ -119,6 +127,7 @@ hr {
   display: flex;
   align-items: center;
   gap: 2rem;
+  margin: 1.5rem 0;
 
   & img {
     width: 3rem;
@@ -133,11 +142,17 @@ hr {
 
 .creator {
   color: white;
+  text-decoration: none;
 
   &:hover {
     color: $nftcyan;
     cursor: pointer;
   }
+}
+
+footer {
+  color: white;
+  margin: 2rem;
 }
 
 .attribution {
@@ -146,4 +161,5 @@ hr {
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
+  text-decoration: none;
 }
